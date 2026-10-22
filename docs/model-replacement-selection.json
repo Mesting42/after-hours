@@ -1,0 +1,261 @@
+{
+  "project": "准点下班",
+  "confirmedDate": "2026-10-15",
+  "budget": 0,
+  "stage": "complete-local-integration",
+  "backup": "backups/before-model-replacement-20261015-204942",
+  "cleanup": {
+    "confirmedDate": "2026-10-15",
+    "trigger": "After the selected models are integrated and regression checks pass",
+    "remove": [
+      "Superseded procedural character geometry",
+      "Superseded procedural office furnishing geometry",
+      "Unreferenced model-specific asset files and generation code",
+      "Obsolete imports and build references"
+    ],
+    "retain": [
+      "Pre-replacement recovery backup",
+      "Shared gameplay, collision, navigation, camera and tutorial systems",
+      "Resources still used by the new implementation"
+    ],
+    "completed": true,
+    "completedDate": "2026-10-17",
+    "removedFiles": [
+      "public/assets/models/office-kit.json",
+      "public/assets/animations/motion.json",
+      "art-preview/model-review.png",
+      "duplicate source-assets/candidates/office-modern-environment/modern_office_environment.glb"
+    ]
+  },
+  "scope": {
+    "playerModelUsedByLeaders": false,
+    "preserveFiveRegions": true,
+    "preserveCameraFollowAndTutorial": true,
+    "preserveSettingsAndSaves": true,
+    "runtimeAssetsLocalOnly": true
+  },
+  "assets": [
+    {
+      "role": "player",
+      "name": "Business Man - Low Polygon game character",
+      "author": "manoeldarochadeoliveira",
+      "uid": "b6f6740f883b4749abac47af0045a9dd",
+      "source": "https://sketchfab.com/3d-models/business-man-low-polygon-game-character-b6f6740f883b4749abac47af0045a9dd",
+      "pageLicense": "CC BY 4.0",
+      "sourceFileValidated": true,
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "pageVerifiedDate": "2026-10-17",
+      "downloadMethod": "Sketchfab official Download control in authenticated browser",
+      "sourceFile": "source-assets/player/business_man_-_low_polygon_game_character.glb",
+      "sha256": "bfdad6e685e75d92f5b9c38a635710530a27b5673a6e3d3a1119aca204ba2760",
+      "bytes": 6264280,
+      "validationScope": "Static GLB structure; integration and visual QA recorded separately",
+      "modifications": "Normalized to meters; optimized textures; locomotion clips adapted and crouch/interaction overlays added.",
+      "downloadedDate": "2026-10-15",
+      "runtimeFiles": [
+        {
+          "path": "public\\assets\\models\\player.glb",
+          "sha256": "f9f7463b9ed02f73af0e3356a342b9db10ef3c9423f41d8618f618016b631f67",
+          "bytes": 2277944,
+          "skinCount": 1,
+          "animationCount": 25
+        }
+      ]
+    },
+    {
+      "role": "department",
+      "name": "Eric Rigged 001 - Rigged 3D Business Man",
+      "author": "Renderpeople",
+      "uid": "a46bc9f67aaa415bb4f3241eef900e7f",
+      "source": "https://sketchfab.com/3d-models/eric-rigged-001-rigged-3d-business-man-a46bc9f67aaa415bb4f3241eef900e7f",
+      "pageLicense": "CC BY 4.0",
+      "additionalPageNotice": "NoAI",
+      "sourceFileValidated": true,
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "pageVerifiedDate": "2026-10-17",
+      "downloadMethod": "Sketchfab official Download control in authenticated browser",
+      "sourceFile": "source-assets/department/eric_rigged_001_-_rigged_3d_business_man.glb",
+      "sha256": "5fd39ba813c5c5f40bc2ec1ccb29a81f80c703bec0c863847f3beea99ba8ae5e",
+      "bytes": 2467872,
+      "validationScope": "Static GLB structure; integration and visual QA recorded separately",
+      "modifications": "Preserved source surface and skin weights; mapped to anatomical skeleton; added Idle/Walk/Run; optimized textures. Original NoAI notice retained.",
+      "downloadedDate": "2026-10-15",
+      "runtimeFiles": [
+        {
+          "path": "public\\assets\\models\\department.glb",
+          "sha256": "0af4768ef7e7ec85f37a892934eeb91f8f76c629a9f177938ce76943135b89c3",
+          "bytes": 841116,
+          "skinCount": 1,
+          "animationCount": 3
+        }
+      ]
+    },
+    {
+      "role": "roaming",
+      "name": "Businessman (Rigged)",
+      "author": "Jungle Jim",
+      "uid": "8933d61fcb1e46f3aead661227bb4fed",
+      "source": "https://sketchfab.com/3d-models/businessman-rigged-8933d61fcb1e46f3aead661227bb4fed",
+      "pageLicense": "CC BY 4.0",
+      "sourceFileValidated": true,
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "pageVerifiedDate": "2026-10-17",
+      "downloadMethod": "Sketchfab official Download control in authenticated browser",
+      "sourceFile": "source-assets/roaming/businessman_rigged.glb",
+      "sha256": "e85777868afe3cd967c0844fd590b54e7a54b1537c09a11f3ea1a36e60d5709f",
+      "bytes": 10041356,
+      "validationScope": "Static GLB structure; integration and visual QA recorded separately",
+      "modifications": "Mapped skin to anatomical skeleton; added Idle/Walk/Run; reduced surface complexity and texture size.",
+      "downloadedDate": "2026-10-15",
+      "runtimeFiles": [
+        {
+          "path": "public\\assets\\models\\roaming.glb",
+          "sha256": "69f4499dc8984ae70c1bf0a98daf2f4313df546d0c54e3f1b2619200fb1f30bf",
+          "bytes": 4379780,
+          "skinCount": 1,
+          "animationCount": 3
+        }
+      ]
+    },
+    {
+      "role": "security",
+      "name": "Police 3D Model",
+      "author": "Aayush.Bhattarai",
+      "uid": "c02d07f380f74bd485a4820f0f5f7541",
+      "source": "https://sketchfab.com/3d-models/police-3d-model-c02d07f380f74bd485a4820f0f5f7541",
+      "pageLicense": "CC BY 4.0",
+      "approvedAdaptation": "Replace police insignia with generic security identification",
+      "sourceFileValidated": true,
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "pageVerifiedDate": "2026-10-17",
+      "downloadMethod": "Sketchfab official Download control in authenticated browser",
+      "sourceFile": "source-assets/security/police_3d_model.glb",
+      "sha256": "81d64c8e4f503fbf9c470d862eadc1d9021a32828225292a85e5d6bbf11c6a23",
+      "bytes": 3487408,
+      "validationScope": "Static GLB structure; integration and visual QA recorded separately",
+      "modifications": "Added anatomical skeleton and smooth weights; added Idle/Walk/Run; replaced police insignia areas with plain security cloth; optimized textures.",
+      "downloadedDate": "2026-10-15",
+      "runtimeFiles": [
+        {
+          "path": "public\\assets\\models\\security.glb",
+          "sha256": "f3d467b78c50a1abe188d6c56ee12405ca843af3f1af8918abf2c7e8c23d2d1c",
+          "bytes": 2146348,
+          "skinCount": 1,
+          "animationCount": 3
+        }
+      ]
+    },
+    {
+      "role": "office",
+      "name": "Modern Office Environment",
+      "author": "Bl4ckGh0st",
+      "uid": "64144940384d426884f70a9c941bf124",
+      "source": "https://sketchfab.com/3d-models/modern-office-environment-64144940384d426884f70a9c941bf124",
+      "pageLicense": "CC BY 4.0",
+      "sourceFileValidated": true,
+      "confirmedDate": "2026-10-17",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "pageVerifiedDate": "2026-10-17",
+      "downloadMethod": "Sketchfab official Download control in authenticated browser",
+      "sourceFile": "source-assets/office/modern_office_environment.glb",
+      "sha256": "ff2e6b779ba022fc663ed5dd9df4505faacb0863420da4594290c0e8458a8727",
+      "bytes": 20061784,
+      "validationScope": "Static GLB structure; integration and visual QA recorded separately",
+      "modifications": "Extracted and centered desk, chair, cabinet, shelf, table and plant components; optimized textures and neutral furniture finishes for game lighting; adapted to existing five game regions.",
+      "downloadedDate": "2026-10-17",
+      "runtimeFiles": [
+        {
+          "path": "public\\assets\\models\\office-cabinet.glb",
+          "sha256": "faa4c0a4f01022f6a220fadadc3b7414d00eeb24652761899de29ad1212861f4",
+          "bytes": 901400,
+          "skinCount": 0,
+          "animationCount": 0
+        },
+        {
+          "path": "public\\assets\\models\\office-chair.glb",
+          "sha256": "b2bfbf5a85b8f2d893236cf8105c5b0727898fb45d523ed064bc3a5b77ba0e70",
+          "bytes": 492720,
+          "skinCount": 0,
+          "animationCount": 0
+        },
+        {
+          "path": "public\\assets\\models\\office-desk.glb",
+          "sha256": "2b0cc517c2059a7939ca10fc8fa7cc8039d04a38d3f48013b5530d51e1323707",
+          "bytes": 3025520,
+          "skinCount": 0,
+          "animationCount": 0
+        },
+        {
+          "path": "public\\assets\\models\\office-plant.glb",
+          "sha256": "2621b77ec6554a63faa6512130d0fbf66d534fdee5b87eae70d690ceeb1d5f90",
+          "bytes": 2065364,
+          "skinCount": 0,
+          "animationCount": 0
+        },
+        {
+          "path": "public\\assets\\models\\office-shelf.glb",
+          "sha256": "79aac82ca28c7c145d718a617b1b288a5de0848151c08556ab92ab92b8f968e4",
+          "bytes": 1443692,
+          "skinCount": 0,
+          "animationCount": 0
+        },
+        {
+          "path": "public\\assets\\models\\office-table.glb",
+          "sha256": "7febe94999b15be08a0e62fc4d4ae8c256e9ca815492fa5020fc49fd76c05cf2",
+          "bytes": 586052,
+          "skinCount": 0,
+          "animationCount": 0
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "name": "Toon Businessman in Suit Confident anime",
+      "uid": "feb72c57b1a946dca24be0bdc41a829c",
+      "reason": "Paid asset excluded by user; no purchase authorized"
+    },
+    {
+      "name": "Drew - Security guard in unmarked uniform",
+      "reason": "Official GLB inspected locally: no skins or animations; not the approved security model"
+    },
+    {
+      "role": "office",
+      "name": "office large room FREE",
+      "author": "dasy444",
+      "uid": "307f2c34dba44198a8df93df2f91c94f",
+      "source": "https://sketchfab.com/3d-models/office-large-room-free-307f2c34dba44198a8df93df2f91c94f",
+      "pageLicense": "Free Standard",
+      "pageDisclosure": "AI-assisted furniture",
+      "sourceFileValidated": false,
+      "reason": "Free Standard is not the open content license required by the user on 2026-10-17; never integrated"
+    }
+  ],
+  "licensePolicy": {
+    "budget": 0,
+    "accepted": [
+      "CC BY 4.0",
+      "CC0-1.0"
+    ],
+    "rejected": [
+      "Paid",
+      "Free Standard",
+      "No documented license",
+      "NonCommercial",
+      "NoDerivatives"
+    ],
+    "verifiedDate": "2026-10-17"
+  },
+  "validation": {
+    "date": "2026-10-17",
+    "tests": 47,
+    "normalFiveAreaFlow": "passed with visible development fixtures",
+    "hardRetryAndFinalEnding": "passed with visible development fixtures",
+    "mobileViewport": "390x844 Chromium, actual pointer drag and crouch",
+    "physicalMobileDevices": "not tested",
+    "browserErrors": 0,
+    "runtimeModels": 10,
+    "runtimeModelBytes": 18159936,
+    "report": "docs/MODEL_REPLACEMENT_2026-10-17.md"
+  }
+}

@@ -1,0 +1,24 @@
+node_modules/
+dist/
+qa/screenshots/
+.firecrawl/
+*.log
+
+# Local evidence, generated previews and recoverable delivery archives.
+backups/
+qa/
+art-preview/
+design-plans/
+*.zip
+*.sha256
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+
+# Original author downloads remain local; public/ contains licensed runtime assets.
+source-assets/**
+!source-assets/README.md
+!source-assets/**/
+!source-assets/**/LICENSE-SOURCE.txt

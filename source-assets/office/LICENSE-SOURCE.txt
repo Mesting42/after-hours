@@ -1,0 +1,7 @@
+office: Modern Office Environment
+Author: Bl4ckGh0st
+Source: https://sketchfab.com/3d-models/modern-office-environment-64144940384d426884f70a9c941bf124
+License: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+Modifications: Extracted and centered desk, chair, cabinet, shelf, table and plant components; optimized textures and neutral furniture finishes for game lighting; adapted to existing five game regions.
+Original source SHA256: ff2e6b779ba022fc663ed5dd9df4505faacb0863420da4594290c0e8458a8727
+

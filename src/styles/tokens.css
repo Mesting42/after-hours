@@ -1,0 +1,15 @@
+/* Shared visual contract: the scene, controls and persistence remain independent. */
+:root {
+  color-scheme: dark;
+  --bg: #101417; --surface: #181e22; --surface-raised: #22292d;
+  --ink: #f2ede3; --muted: #b5b3ac; --subtle: #8d9395;
+  --gold: #dda65a; --gold-bright: #efbf7e; --line: #465057;
+  --line-soft: #323b40; --danger: #ef9585; --safe: #b8cabb;
+  --font-sans: 'Segoe UI','Microsoft YaHei','PingFang SC',sans-serif;
+  --font-title: 'Songti SC','SimSun','Noto Serif CJK SC',serif;
+  --font-mono: 'Cascadia Code','Consolas',monospace;
+  --radius: 3px; --edge: clamp(20px,3.4vw,56px);
+  --ease: cubic-bezier(.2,.7,.3,1);
+  font-family: var(--font-sans); font-size: 14px; color: var(--ink); background: var(--bg);
+}
+.high-contrast { --bg: #0d1114; --surface: #12181c; --surface-raised: #20282d; --ink: #fffaf0; --muted: #e3ded3; --subtle: #c7c9c6; --gold: #ffd08c; --line: #a2abae; --line-soft: #727e84; }

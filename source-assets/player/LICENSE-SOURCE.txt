@@ -1,0 +1,7 @@
+player: Business Man - Low Polygon game character
+Author: manoeldarochadeoliveira
+Source: https://sketchfab.com/3d-models/business-man-low-polygon-game-character-b6f6740f883b4749abac47af0045a9dd
+License: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+Modifications: Normalized to meters; optimized textures; locomotion clips adapted and crouch/interaction overlays added.
+Original source SHA256: bfdad6e685e75d92f5b9c38a635710530a27b5673a6e3d3a1119aca204ba2760
+

@@ -1,0 +1,44 @@
+AFTER HOURS — Third-party model attribution
+
+License for all five models: Creative Commons Attribution 4.0 International
+https://creativecommons.org/licenses/by/4.0/
+Full legal text: CC-BY-4.0.txt
+
+player: Business Man - Low Polygon game character
+Author: manoeldarochadeoliveira
+Source: https://sketchfab.com/3d-models/business-man-low-polygon-game-character-b6f6740f883b4749abac47af0045a9dd
+License: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+Modifications: Normalized to meters; optimized textures; locomotion clips adapted and crouch/interaction overlays added.
+Original source SHA256: bfdad6e685e75d92f5b9c38a635710530a27b5673a6e3d3a1119aca204ba2760
+
+department: Eric Rigged 001 - Rigged 3D Business Man
+Author: Renderpeople
+Source: https://sketchfab.com/3d-models/eric-rigged-001-rigged-3d-business-man-a46bc9f67aaa415bb4f3241eef900e7f
+License: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+Modifications: Preserved source surface and skin weights; mapped to anatomical skeleton; added Idle/Walk/Run; optimized textures. Original NoAI notice retained.
+Additional source-page notice: NoAI. This model may not be used in datasets for, in the development of, or as inputs to generative AI programs.
+Original source SHA256: 5fd39ba813c5c5f40bc2ec1ccb29a81f80c703bec0c863847f3beea99ba8ae5e
+
+roaming: Businessman (Rigged)
+Author: Jungle Jim
+Source: https://sketchfab.com/3d-models/businessman-rigged-8933d61fcb1e46f3aead661227bb4fed
+License: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+Modifications: Mapped skin to anatomical skeleton; added Idle/Walk/Run; reduced surface complexity and texture size.
+Original source SHA256: e85777868afe3cd967c0844fd590b54e7a54b1537c09a11f3ea1a36e60d5709f
+
+security: Police 3D Model
+Author: Aayush.Bhattarai
+Source: https://sketchfab.com/3d-models/police-3d-model-c02d07f380f74bd485a4820f0f5f7541
+License: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+Modifications: Added anatomical skeleton and smooth weights; added Idle/Walk/Run; replaced police insignia areas with plain security cloth; optimized textures.
+Original source SHA256: 81d64c8e4f503fbf9c470d862eadc1d9021a32828225292a85e5d6bbf11c6a23
+
+office: Modern Office Environment
+Author: Bl4ckGh0st
+Source: https://sketchfab.com/3d-models/modern-office-environment-64144940384d426884f70a9c941bf124
+License: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+Modifications: Extracted and centered desk, chair, cabinet, shelf, table and plant components; optimized textures and neutral furniture finishes for game lighting; adapted to existing five game regions.
+Original source SHA256: ff2e6b779ba022fc663ed5dd9df4505faacb0863420da4594290c0e8458a8727
+
+No endorsement by the original authors is implied.
+Original downloads are retained outside public/; runtime derivatives include attribution and license files.

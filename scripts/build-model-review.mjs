@@ -1,0 +1,8 @@
+import { readFile, writeFile } from 'node:fs/promises';
+
+/** Optional online source review; this page is separate from the offline game. */
+const selection = JSON.parse(await readFile('docs/model-replacement-selection.json', 'utf8'));
+const escape = (value) => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('"', '&quot;');
+const cards = selection.assets.map((asset) => `<article><h2>${escape(asset.role)} · ${escape(asset.name)}</h2><p>${escape(asset.author)} · <a href="${asset.licenseUrl}">CC BY 4.0</a></p><iframe loading="lazy" title="${escape(asset.name)} 原作者模型" src="https://sketchfab.com/models/${asset.uid}/embed" allow="fullscreen" allowfullscreen></iframe><p>${escape(asset.modifications)}</p><a href="${asset.source}" target="_blank" rel="noopener noreferrer">原作者页面与许可 ↗</a></article>`).join('\n');
+await writeFile('art-preview/index.html', `<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>准点下班 · 已确认开放许可模型</title><style>body{margin:0;padding:32px;background:#111e24;color:#dde5df;font:16px/1.7 system-ui,sans-serif}main{max-width:1200px;margin:auto}h1{font-size:30px}a{color:#d3bb80}section{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}article{padding:20px;border:1px solid #41565a}h2{font-size:18px}iframe{border:0;width:100%;height:340px}p{color:#b5c5c2}</style><main><h1>准点下班 · 已确认的五款模型</h1><p>2026-10-17：五款来源均为免费 CC BY 4.0；S1 Free Standard 与付费 P2 已排除。此页面展示作者原始模型，需要联网；实际游戏加载本地派生 GLB，已适配骨骼、材质和五区布局。</p><p><a href="http://127.0.0.1:4186/">打开本地游戏</a> · 游戏菜单「素材来源」包含完整署名。</p><section>${cards}</section></main></html>`);
+console.log('Updated the source review to the five approved open-license assets.');

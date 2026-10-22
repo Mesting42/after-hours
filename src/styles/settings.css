@@ -1,0 +1,43 @@
+/* A bounded settings workspace: only the active panel scrolls on larger screens. */
+.game-dialog[data-kind=settings] { height:min(740px,calc(100dvh - 40px)); max-height:calc(100dvh - 24px); overflow:hidden; }
+.game-dialog[data-kind=settings] #dialog-body { height:100%; display:flex; flex-direction:column; min-height:0; }
+.game-dialog[data-kind=settings] h2 { margin-top:16px; font-size:30px; }
+.game-dialog[data-kind=settings] .panel-description { font-size:13px; margin-bottom:20px; }
+.settings-layout { display:grid; grid-template-columns:150px minmax(0,1fr); grid-template-rows:minmax(0,1fr); flex:1; min-height:0; border-block:1px solid var(--line-soft); }
+.settings-tabs { display:flex; flex-direction:column; min-height:0; overflow-y:auto; gap:4px; padding:16px 16px 16px 0; border-right:1px solid var(--line-soft); }
+.settings-tabs button { display:flex; align-items:center; gap:12px; min-height:58px; padding:10px 12px; text-align:left; border-left:2px solid transparent; color:var(--muted); }
+.settings-tabs button>.icon { width:18px; }
+.settings-tabs button>span { font-size:14px; line-height:1.5; }
+.settings-tabs small { display:block; margin-top:3px; font:8px/1.5 var(--font-mono); letter-spacing:.8px; }
+.settings-tabs button[aria-selected=true] { color:var(--gold); background:#dda65a12; border-left-color:var(--gold); }
+.settings-tabs button:hover { background:var(--surface-raised); }
+.settings-content { padding:22px 2px 24px 25px; overflow-y:auto; overscroll-behavior:contain; min-width:0; min-height:0; scrollbar-width:thin; scrollbar-color:#778187 var(--surface); }
+.settings-section-heading h3 { font-size:20px; line-height:1.5; font-weight:500; margin:0 0 9px; }
+.settings-section-heading p,.setting-help { font-size:12px; line-height:1.9; color:var(--muted); margin:0 0 18px; }
+.setting-select { display:flex; align-items:center; justify-content:space-between; gap:20px; padding-block:8px 18px; font-size:13px; border-bottom:1px solid var(--line-soft); }
+.setting-select select { min-height:44px; padding:8px 12px; min-width:136px; border:1px solid var(--line); border-radius:var(--radius); background:var(--bg); color:var(--ink); font-size:13px; }
+.setting-feature { margin:16px 0 4px; padding:10px 14px; background:#dda65a0c; border-left:2px solid var(--gold); }
+.setting-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:4px 24px; padding-top:4px; }
+.setting-toggle { display:flex; align-items:center; justify-content:space-between; gap:14px; min-height:60px; padding-block:12px; border-bottom:1px solid var(--line-soft); cursor:pointer; font-size:12px; line-height:1.6; }
+.setting-toggle>span { min-width:0; }.setting-toggle small { display:block; font-size:11px; line-height:1.8; color:var(--muted); margin-top:5px; }
+.setting-toggle input { appearance:none; flex-shrink:0; position:relative; width:38px; height:22px; border:1px solid #7b858c; border-radius:20px; margin:0; background:var(--bg); cursor:pointer; }
+.setting-toggle input:before { content:''; position:absolute; left:3px; top:3px; width:14px; height:14px; border-radius:50%; background:var(--muted); transition:transform .18s var(--ease); }
+.setting-toggle input:checked { border-color:var(--gold); background:#dda65a22; }.setting-toggle input:checked:before { transform:translateX(16px); background:var(--gold); }
+.setting-range { display:flex; flex-direction:column; gap:12px; min-width:0; padding:18px 0 12px; font-size:12px; }
+.setting-range>span { display:flex; justify-content:space-between; gap:12px; }.setting-range output { font:12px/1.6 var(--font-mono); color:var(--gold); }
+.setting-range input { width:100%; min-width:0; max-width:100%; height:26px; margin:0; accent-color:var(--gold); cursor:pointer; }
+.setting-subtitle { font-size:14px; font-weight:500; margin:24px 0 8px; }.keybindings { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 20px; }
+.keybindings label { display:flex; align-items:center; justify-content:space-between; gap:12px; min-width:0; font-size:12px; }
+.keybinding { min-height:44px; min-width:54px; max-width:120px; padding:8px; overflow-wrap:anywhere; border:1px solid var(--line); border-radius:var(--radius); background:var(--bg); font:11px/1.5 var(--font-mono); }.keybinding:hover { border-color:var(--gold); color:var(--gold); }
+.settings-footer { display:flex; align-items:center; gap:12px; padding-top:18px; flex-shrink:0; }
+.settings-footer>span { margin-right:auto; color:var(--muted); font-size:11px; }.settings-footer .button { min-width:120px; font-size:13px; }
+.touch-diagram { display:flex; align-items:center; justify-content:center; gap:35px; padding:25px 0; color:var(--subtle); }
+.touch-diagram-stick,.touch-diagram-action { display:grid; place-items:center; width:84px; height:84px; border:1px solid var(--line); border-radius:50%; font-size:12px; color:var(--muted); }.touch-diagram-action { width:58px; height:58px; border-color:var(--gold); color:var(--gold); border-radius:12px; }
+@media(max-width:700px) {
+  .game-dialog[data-kind=settings] { height:calc(100dvh - 24px); padding:16px 18px; }.game-dialog[data-kind=settings] h2 { font-size:24px; letter-spacing:1px; margin:10px 0 8px; }.game-dialog[data-kind=settings] .panel-description { font-size:12px; margin-bottom:12px; }
+  .settings-layout { display:flex; flex-direction:column; }.settings-tabs { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:4px; border-right:0; border-bottom:1px solid var(--line-soft); padding:8px 0; flex-shrink:0; }
+  .settings-tabs button { min-width:0; min-height:48px; padding:8px 2px; display:flex; flex-direction:column; gap:4px; align-items:center; justify-content:center; text-align:center; border-left:0; border-bottom:2px solid transparent; }.settings-tabs button>span { font-size:11px; }.settings-tabs button>.icon { width:16px; height:16px; }.settings-tabs small { display:none; }.settings-tabs button[aria-selected=true] { border-left:0; border-bottom-color:var(--gold); }
+  .settings-content { padding:18px 2px; flex:1; }.settings-section-heading h3 { font-size:18px; }.settings-section-heading p { font-size:12px; }.setting-grid { grid-template-columns:minmax(0,1fr); gap:0; }.setting-toggle { min-height:56px; font-size:13px; }.setting-range { padding-top:18px; }.setting-feature { padding-inline:10px; }.setting-select { font-size:13px; }.setting-select select { min-width:130px; }
+  .settings-footer { padding-top:12px; gap:10px; }.settings-footer>span { display:none; }.settings-footer .button { min-width:0; min-height:48px; flex:1; padding-inline:12px; gap:10px; }.settings-footer .button>span { white-space:nowrap; }.keybindings { column-gap:16px; }
+}
+@media(max-height:500px) and (min-width:701px) { .game-dialog[data-kind=settings] { height:calc(100dvh - 24px); padding:12px 20px; }.game-dialog[data-kind=settings] h2 { font-size:23px; margin:6px 0; }.game-dialog[data-kind=settings] .panel-description { margin-bottom:8px; }.settings-tabs { padding-block:8px; gap:0; }.settings-tabs button { min-height:40px; padding-block:6px; }.settings-tabs small { display:none; }.settings-content { padding-top:14px; }.settings-footer { padding-top:10px; }.settings-footer .button { min-height:44px; padding-block:8px; } }

@@ -1,0 +1,8 @@
+department: Eric Rigged 001 - Rigged 3D Business Man
+Author: Renderpeople
+Source: https://sketchfab.com/3d-models/eric-rigged-001-rigged-3d-business-man-a46bc9f67aaa415bb4f3241eef900e7f
+License: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+Modifications: Preserved source surface and skin weights; mapped to anatomical skeleton; added Idle/Walk/Run; optimized textures. Original NoAI notice retained.
+Additional source-page notice: NoAI. This model may not be used in datasets for, in the development of, or as inputs to generative AI programs.
+Original source SHA256: 5fd39ba813c5c5f40bc2ec1ccb29a81f80c703bec0c863847f3beea99ba8ae5e
+

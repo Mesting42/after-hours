@@ -1,0 +1,7 @@
+security: Police 3D Model
+Author: Aayush.Bhattarai
+Source: https://sketchfab.com/3d-models/police-3d-model-c02d07f380f74bd485a4820f0f5f7541
+License: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+Modifications: Added anatomical skeleton and smooth weights; added Idle/Walk/Run; replaced police insignia areas with plain security cloth; optimized textures.
+Original source SHA256: 81d64c8e4f503fbf9c470d862eadc1d9021a32828225292a85e5d6bbf11c6a23
+

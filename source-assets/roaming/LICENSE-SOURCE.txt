@@ -1,0 +1,7 @@
+roaming: Businessman (Rigged)
+Author: Jungle Jim
+Source: https://sketchfab.com/3d-models/businessman-rigged-8933d61fcb1e46f3aead661227bb4fed
+License: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+Modifications: Mapped skin to anatomical skeleton; added Idle/Walk/Run; reduced surface complexity and texture size.
+Original source SHA256: e85777868afe3cd967c0844fd590b54e7a54b1537c09a11f3ea1a36e60d5709f
+
