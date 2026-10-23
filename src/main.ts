@@ -26,8 +26,8 @@ try {
   game.run();
   // Integration fixture access is excluded from production. QA may position entities to test states.
   if (import.meta.env.DEV && new URLSearchParams(location.search).has('qa')) {
-    const { installHarness } = await import('./qa/DevHarness');
-    installHarness(game, ui);
+    // Keep the public development bridge self-contained. The private QA harness
+    // is not included in this repository and must not block a clean CI build.
     const bridge = {
       game,
       snapshot: () => ({ phase: game.phase, area: game.area, position: game.player.position, state: game.player.state,
