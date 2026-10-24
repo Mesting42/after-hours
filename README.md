@@ -136,3 +136,14 @@ npm run qa               # 构建产物、资源、文档与测试夹具排除�
 ## 2026-10-22 人物遮挡修复
 
 镜头前方挡住人物的外墙、墙沿、隔断和高柜会自动淡化，离开后恢复。支持站立、蹲伏和手动旋转镜头；碰撞及领导视线保持。实现与验证范围见 [人物遮挡修复记录](docs/PLAYER_OCCLUSION_2026-10-22.md)。当前源码与 dist 已更新，历史 ZIP 未覆盖。
+
+<!-- pixel-pier-game-listing:start -->
+## Game listing / 游戏展示
+
+- **Game developer / 游戏开发者:** Mest ([@Mesting42](https://github.com/Mesting42))
+- **Pixel Pier listing / 游戏展示页面:** [After Hours](https://riverglint.link/games/after-hours/)
+
+This game is listed on Pixel Pier with a play entry and game guide. This link identifies a game-development and listing relationship; it does not identify the developer as the website operator or operating entity.
+
+本游戏在 Pixel Pier 展示，并提供游玩入口与游戏指南。此链接仅表示游戏开发与展示关联，不代表开发者是该网站的运营者或运营主体。
+<!-- pixel-pier-game-listing:end -->
